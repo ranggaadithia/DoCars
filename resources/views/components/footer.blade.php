@@ -1,92 +1,46 @@
-<footer class="text-center lg:text-left bg-gray-900 text-gray-100">
-  <div class="mx-10 lg:px-15 py-10 text-center md:text-left">
-    <div class="flex flex-col md:flex-col lg:flex-row mx-auto md:justify-between lg:items-center">
-      <div class="basis-1/3 flex flex-col md:px-32 lg:px-0">
-        <h6 class="mb-4 font-title text-3xl md:text-center lg:text-left">
-          My Tour Bali
-        </h6>
-        <div class="line-pattern mx-auto lg:ml-7"></div>
-        <p class="-mt-5 md:text-center lg:text-left">
-          My Tour Bali is a reliable driver that can make your holiday in Bali memorable.
-        </p>
+<section id="footer" class="footer bg-dark text-white">
+  <div class="container">
+    <div class="row pt-5 pb-5 justify-content-around">
+      <div class="col-lg-5 pb-5">
+        <h1 class="pb-3">Gusti Driver</h1>
+        <div class="line-patern"></div>
+        <p style="color: #D4D4D4;">Gusti Driver is a reliable driver that can make your holiday in Bali memorable</p>
       </div>
-      
-      <div class="flex flex-col md:flex-row basis-1/2 lg:justify-between md:justify-around md:mt-10">
-        <div class="flex flex-col">
-          <div class="mt-5">
-            <h6 class="font-subtitle font-semibold mb-4 flex justify-center md:justify-start text-2xl">
-              Help
-            </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-emerald-600">How to Booking</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-emerald-600">Term and Condition</a>
-            </p>
+      <div class="col-lg-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Help</h4>
+            <a href="">How to Booking</a><br />
+            <a href="">Term and Condition</a>
           </div>
-          <div class="mt-5">
-            <h6 class="font-semibold font-subtitle mb-4 flex justify-center md:justify-start text-2xl">
-              Useful Links
-            </h6>
-            
-            <p class="mb-4">
-              <a href="/#services" class="text-emerald-600">Services</a>
-            </p>
-            <p class="mb-4">
-              <a href="/#destinations" class="text-emerald-600">Destinations</a>
-            </p>
-            <p class="mb-4">
-              <a href="/#tour-packages" class="text-emerald-600">Tour Packages</a>
-            </p>
-            <p class="mb-4">
-              <a href="/#gallery" class="text-emerald-600">Gallery</a>
-            </p>
+          <div class="col-lg-12 mt-3">
+            <h4>Explore</h4>
+            <a href="#home">About</a><br />
+            <a href="#services">Services</a><br />
+            <a href="#tour">Tour Package</a><br />
+            <a href="#gallery">Gallery</a><br />
+            <a href="#testimoni">Testimonial</a><br />
           </div>
         </div>
-        <div class="flex flex-col md:flex-col">
-          <div class="mt-5">
-            <h6 class="font-subtitle font-semibold mb-4 flex justify-center md:justify-start text-2xl">
-              Social Media
-            </h6>
-            <p class="mb-4">
-              <a href="https://instagram.com/balidriverputu?igshid=ZDdkNTZiNTM=" class="text-emerald-600" target="_blank"><i class="icofont-instagram"></i> balidriverputu</a>
-            </p>
-            <p class="mb-4">
-              <a href="https://www.facebook.com/putu.balidriver.3?mibextid=ZbWKwL" class="text-emerald-600" target="_blank">
-                <i class="icofont-facebook"></i> Putu Bali Driver</a>
-            </p>
-            <p class="mb-4 block">
-              <a href="https://www.tripadvisor.com/Attraction_Review-g297697-d25288635-Reviews-My_Tour_Bali-Kuta_Kuta_District_Bali.html" class="text-emerald-600 flex justify-center md:justify-start" target="_blank">
-                <img src="/icofont/tripadvisor-logo.svg" alt="" class="w-5 mr-1 "> My Tour Bali
-              </a>
-            </p>
+      </div>
+      <div class="col-lg-3 contact">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Contact Us</h4>
+            <p>WhatsApp</p>
+            <a href="https://wa.me/6281999465208">+6281999465208</a>
+            <p>Email</p>
+            <a href="">gusti6679@gmail.com</a>
           </div>
-          <div class="mt-5">
-            <h6 class="font-semibold mb-4 flex justify-center md:justify-start text-2xl">
-              Contact
-            </h6>
-            <p class="mb-4">
-              <a href="mailto:darma_eka89@yahoo.co.id" class="">
-                <i class="icofont-email"></i> darma_eka89@yahoo.co.id</a>
-            </p>
-            <p class="mb-4">
-              <a href="{{ config('app.whatsapp') }}" class="">
-                <i class="icofont-whatsapp"></i> +62-858-8882-1190
-              </a>
-            </p>
-            <p class="mb-4">
-              <a href="https://wa.me/6285737691010" class="">
-                <i class="icofont-whatsapp"></i> 
-                +62-857-3769-1010 (Putu)
-              </a>
-            </p>
+          <div class="col-lg-12 mt-3">
+            <h4>Social</h4>
+            <a href="https://www.facebook.com/gusti.sutresna.3">Facebook</a><br />
+            <a href="https://www.instagram.com/gustibalitranport/?igshid=1bj60m3dejdph">Instagram</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="text-center p-6 bg-gray-900 line border-t-2 border-emerald-100">
-    <span>© 2023 Copyright:</span>
-    <a class="text-emerald-600 font-semibold" href="/">My Tour Bali</a>
-  </div>
-</footer>
+  <p class="copyright" style="font-size: 18px;">&copy; 2020 <span>Gusti Driver</span> Build With <i class="fas fa-heart text-danger"></i> by : <a href="https://www.instagram.com/ranggaaditya_26/">Rangga Adithia</a>
+  </p>
+</section>
