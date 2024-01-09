@@ -138,69 +138,15 @@
     <div class="container">
       <h1 class="text-center title pt-3" data-aos="fade-up">Tour Package</h1>
       <div class="row">
+        @foreach ($packages as $package)
         <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
           <div class="box-tour">
-            <p>West Nusa Penida</p>
-            <a href="West-Nusa-Penida.html" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/klingking.jpg" alt="">
+            <p>{{ $package->name }}</p>
+            <a href="{{ route('package', $package->slug) }}" class="btn btn-primary">View Details</a>
+            <img src="{{ asset('storage/'. $package->image_cover) }}" alt="">
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="350">
-          <div class="box-tour">
-            <p>Bedugul Lake Temple</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/pura.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="box-tour">
-            <p>Ubud Art Village</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/monyet.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="450">
-          <div class="box-tour">
-            <p>Lovina Dolphin</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/lovina.jpg" alt="" style="width: 120%;">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
-          <div class="box-tour">
-            <p>Heaven Gate Temple</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/lempuyang.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="550">
-          <div class="box-tour">
-            <p>Uluwatu Cliff Temple</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/kecak.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
-          <div class="box-tour">
-            <p>Batur Volcano Tour</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/batur.jpg" alt="" style="width: 130%;">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="650">
-          <div class="box-tour">
-            <p>East Area Nusa Penida Island</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/nusa-penida.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
-          <div class="box-tour">
-            <p>Tanah Lot Temple Tour</p>
-            <a href="" class="btn btn-primary">View Details</a>
-            <img src="img/thumbs/tanah.jpg" alt="" style="width: 160%; margin-left: -40%;">
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
   </section>

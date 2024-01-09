@@ -54,7 +54,7 @@
     })();
   </script>
   <!-- My CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ asset('style.css') }}">
 
   @stack('style')
 
@@ -74,7 +74,7 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"></script>
 <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-<script src="script.js"></script>
+<script src="{{ asset('script.js') }}"></script>
 </body>
 
 </html>
