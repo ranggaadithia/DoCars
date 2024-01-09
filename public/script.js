@@ -2,7 +2,7 @@
 AOS.init();
 // carosel
 $(".owl-carousel").owlCarousel({
-  loop: true,
+  loop: false,
   nav: false,
   responsive: {
     0: {

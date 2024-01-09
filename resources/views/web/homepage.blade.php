@@ -349,46 +349,13 @@
       <div class="row">
         <div class="col-12">
           <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="300">
+            @foreach ($reviews as $review)
             <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/IMG-20190604-WA0069[1].jpg" alt="">
-              <h5 style="margin-top:10px;"> Hazar Hamzah </h5>
+              data-placement="bottom" data-offset="0px 10px" data-content="{{ $review->description }}"><img
+                class="rounded-circle" data-original-title src="{{ asset('storage/'. $review->image) }}" alt="">
+              <h5 style="margin-top:10px;"> {{ $review->name }} </h5>
             </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testimoni (2).jpg" alt="">
-              <h5 style="margin-top:10px;"> Paula </h5>
-            </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testi (1)crop.jpeg" alt="">
-              <h5 style="margin-top:10px;"> Selly </h5>
-            </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testi (2).jpeg" alt="">
-              <h5 style="margin-top:10px;"> Wendy Chan </h5>
-            </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testi (3).jpeg" alt="">
-              <h5 style="margin-top:10px;"> Hazar Hamzah </h5>
-            </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testimoni (23).jpg" alt="">
-              <h5 style="margin-top:10px;"> Hazar Hamzah </h5>
-            </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testimoni (19).jpg" alt="">
-              <h5 style="margin-top:10px;"> Hazar Hamzah </h5>
-            </div>
-            <div class="item example-popover" data-trigger="hover" data-container="body" data-toggle="popover"
-              data-placement="bottom" data-offset="0px 10px" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ex quia nam non esse voluptates fugit modi voluptas maiores labore?"><img
-                class="rounded-circle" data-original-title src="img/testimoni/testimoni (1).jpg" alt="">
-              <h5 style="margin-top:10px;"> Hazar Hamzah </h5>
-            </div>
+            @endforeach
           </div>
         </div>
       </div>

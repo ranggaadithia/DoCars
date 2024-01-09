@@ -11,7 +11,7 @@
     </div>
 
 
-  <div class="container">
+  <div class="container mb-5">
     <h1 class="text-center mb-5 pt-3" data-aos="fade-up">Tours Destination</h1>
 
     @foreach ($destinations as $destination)
@@ -28,6 +28,6 @@
 
   </div>
 
-  {{-- @include('components.footer') --}}
+  @include('components.footer')
   
 @endsection
