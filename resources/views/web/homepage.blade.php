@@ -156,13 +156,15 @@
     <div class="container">
       <h1 class="text-center mb-5 title pt-3" data-aos="fade-up">Galery</h1>
       <div class="row">
+        @foreach ($photos->take(10)->shuffle() as $photo)
+            
         <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter">
-            <img src="img/thumbs/sekumpul2.jpg" alt="" class="img-thumbnail img-fluid" 
+          <a href="" data-toggle="modal" data-target="#exampleModalCenter{{ $photo->id }}">
+            <img src="{{ asset('storage/'. $photo->image) }}" alt="" class="img-thumbnail img-fluid" 
             data-aos="fade-up" data-aos-delay="300">
           </a>
         </div>
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        <div class="modal fade" id="exampleModalCenter{{ $photo->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
           aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -173,168 +175,16 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="img/sekumpul.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('storage/'. $photo->image) }}" alt="" class="img-fluid">
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter2">
-            <img src="img/thumbs/pura.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="350">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Beratan Temple</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/pura.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter3">
-            <img src="img/thumbs/lempuyang.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="400">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Lempuyang Temple</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/lempuyang.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter4">
-            <img src="img/thumbs/klingking.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="450">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Klingking Beach</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/klingking.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
+        @endforeach
+
+
       </div>
-      <div class="row jarak pb-3">
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter5">
-            <img src="img/thumbs/gwk2.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="500">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Garuda Wisnu Kencana</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/gwk2.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter6">
-            <img src="img/thumbs/airterjun.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="550">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Sekumpul Waterfall</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/airterjun.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter7">
-            <img src="img/thumbs/tukad.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="600">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Tukad Cepung</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/tukad.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6">
-          <a href="" data-toggle="modal" data-target="#exampleModalCenter8">
-            <img src="img/thumbs/monyet.jpg" alt="" class="img-thumbnail img-fluid" 
-            data-aos="fade-up" data-aos-delay="650">
-          </a>
-        </div>
-        <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Monkey Forest</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <img src="img/thumbs/monyet.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <a href="" class="float-right sr-only" data-aos="fade-right" data-aos-delay="750">More Image <i class="fas fa-arrow-right"></i></a>
     </div>
   </section>
