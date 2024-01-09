@@ -107,6 +107,8 @@ class PackageController extends Controller
         JsonLdMulti::setType('WebPage');
         JsonLdMulti::addImage(asset('storage/' . $package->image));
         $destinations = $package->destinations()->orderBy('order', 'asc')->get();
+
+        // return $destinations;
         return view('web.tour.show', compact('package', 'destinations'));
     }
 

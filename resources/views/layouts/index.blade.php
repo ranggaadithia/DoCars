@@ -43,8 +43,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- carosel -->
-  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{{ asset('./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') }}">
   <!-- crisp chat -->
   <script type="text/javascript">
     window.$crisp = []; window.CRISP_WEBSITE_ID = "b718485c-86e2-4a03-83ea-384e13c9d032";
@@ -73,7 +73,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"></script>
-<script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="{{ asset('./OwlCarousel2-2.3.4/dist/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('script.js') }}"></script>
 </body>
 

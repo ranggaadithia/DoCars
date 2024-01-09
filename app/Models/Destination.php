@@ -21,7 +21,7 @@ class Destination extends Model
         return $this->belongsTo(Package::class);
     }
 
-    public function photo()
+    public function photos()
     {
         return $this->hasMany(Photos::class);
     }
