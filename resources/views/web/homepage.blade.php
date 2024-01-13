@@ -50,7 +50,7 @@
             </div>
             <h4>Airport Trasport Service</h4>
             <p>Provide Airport Transport Service to attractive and beautiful tourist attractions for tourists...</p>
-            <a href="" class="btn btn-primary tombol">Read More</a>
+            <a href="/airport" class="btn btn-primary tombol">Read More</a>
           </div>
         </div>
         <div class="col-lg-3 col-10 col-sm-4" data-aos="fade-up" data-aos-delay="400">
@@ -60,7 +60,7 @@
             </div>
             <h4>Car Charter Service</h4>
             <p>Provide Transportation services to attractive and beautiful tourist attractions for tourists...</p>
-            <a href="" class="btn btn-primary tombol">Read More</a>
+            <a href="/cars" class="btn btn-primary tombol">Read More</a>
           </div>
         </div>
         <div class="col-lg-3 col-10 col-sm-4" data-aos="fade-up" data-aos-delay="500">
