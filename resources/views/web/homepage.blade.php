@@ -18,21 +18,22 @@
   {{-- about --}}
   <section id="home" class="home pt-5 mb-5">
     <div class="container">
-      <h1 class="text-center mb-5 pt-3 title" data-aos="fade-up">Gusti Driver</h1>
+      <h1 class="text-center mb-5 pt-3 title" data-aos="fade-up">DoCars</h1>
       <div class="row">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
-          <h3 class="pb-2 ">Forget Busy Work,<br>and Enjoy your Holiday</h3>
-          <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, repellat, voluptas beatae vero doloremque, odit aperiam vel ex ratione consequatur itaque deserunt ipsa ullam exercitationem! Cumque blanditiis accusantium quas temporibus, voluptates recusandae ex voluptas! Quibusdam?</p>
-          <a href="" class="btn btn-primary">Contact Us</a>
-        </div>
-        <div class="col-6" data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
-          <figure class="figure">
-            <img src="img/thumbs/pantai.jpg" class="figure-img img-fluid rounded"
-              alt="Klingking Beach">
-            <figcaption class="figure-caption">*Klingking Beach</figcaption>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <figure class="">
+            <img src="img/testimoni/testimoni8.jpg" class="figure-img img-fluid rounded"
+              alt="Mount Batur">
+            <figcaption class="figure-caption">*Mount Batur</figcaption>
           </figure>
           <!-- <img src="img/Group 7.svg" alt="" style="margin-top: -170px; margin-left: 350px; position: relative; z-index: -1;"> -->
         </div>
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="500">
+          {{-- <h3 class="pb-2 ">Forget Busy Work,<br>and Enjoy your Holiday</h3> --}}
+          <p class="pb-2">{{ $description }}</p>
+          <a href="{{ config('app.whatsapp') }}" class="btn btn-primary">Contact Us</a>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -211,6 +212,19 @@
       </div>
     </div>
   </section>
+
+  <div class="cta-section black-trans-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <div class="cta-title">
+                    <h2>Excited about exploring Bali?</h2>
+                    <a href="{{ config('app.whatsapp') }}">Booking Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
   {{-- footer --}}
 

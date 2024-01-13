@@ -57,6 +57,47 @@ body {
     -webkit-animation: nav 0.3s;
 }
 
+.cta-section {
+    background: rgba(0, 0, 0, 0) url("img/jatiluwih.jpg") no-repeat scroll left
+        center / cover;
+    padding: 60px 0;
+}
+.black-trans-bg {
+    position: relative;
+}
+.black-trans-bg::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.cta-title h2 {
+    color: #fff;
+    display: inline-block;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 16px 0;
+    font-family: "Kaushan Script", cursive;
+    text-transform: capitalize;
+}
+.cta-title a {
+    margin-top: 26px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 9px 18px;
+    text-transform: uppercase;
+}
+
 @keyframes nav {
     from {
         width: 0%;
@@ -74,6 +115,8 @@ body {
     background-position: -180px 60px;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 
 .display-4 {

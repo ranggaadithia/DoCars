@@ -45,14 +45,6 @@
   <!-- carosel -->
   <link rel="stylesheet" href="{{ asset('./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') }}">
   <link rel="stylesheet" href="{{ asset('/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') }}">
-  <!-- crisp chat -->
-  <script type="text/javascript">
-    window.$crisp = []; window.CRISP_WEBSITE_ID = "b718485c-86e2-4a03-83ea-384e13c9d032";
-    (function () {
-      d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js";
-      s.async = 1; d.getElementsByTagName("head")[0].appendChild(s);
-    })();
-  </script>
   <!-- My CSS -->
   <link rel="stylesheet" href="{{ asset('style.css') }}">
 
@@ -62,6 +54,11 @@
 </head>
 
 <body class="font-poppins">
+
+  <a href="{{ config('app.whatsapp') }}" class="btn btn-success btn-floating fixed-bottom mb-5 mr-5 d-flex" style="width: 60px; height: 60px; align-items: center; border-radius: 100%; left: 20; justify-content: center" id="WhatsApp">
+    <i class="icofont-brand-whatsapp" style="font-size: 30px"></i>
+  </a>
+  
   
   @yield('container')
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

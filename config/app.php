@@ -230,7 +230,7 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
-    'whatsapp' => 'https://wa.me/6285888821190',
+    'whatsapp' => 'https://wa.me/6281999465208?text=Hi%20there!%20I%27m%20interested%20in%20your%20travel%20services%20for%20DoCars%20Bali.%20Can%20you%20provide%20details%20on%20tour%20packages%20and%20activities%20available?%20Thank%20you!',
 
 
 

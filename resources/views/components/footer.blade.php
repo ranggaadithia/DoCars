@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row pt-5 pb-5 justify-content-around">
       <div class="col-lg-5 pb-5">
-        <h1 class="pb-3">Gusti Driver</h1>
+        <h1 class="pb-3">DoCars</h1>
         <div class="line-patern"></div>
-        <p style="color: #D4D4D4;">Gusti Driver is a reliable driver that can make your holiday in Bali memorable</p>
+        <p style="color: #D4D4D4;">DoCars is a reliable driver that can make your holiday in Bali memorable</p>
       </div>
       <div class="col-lg-3">
         <div class="row">
@@ -41,6 +41,6 @@
       </div>
     </div>
   </div>
-  <p class="copyright" style="font-size: 18px;">&copy; 2020 <span>Gusti Driver</span> Build With <i class="fas fa-heart text-danger"></i> by : <a href="https://www.instagram.com/ranggaaditya_26/">Rangga Adithia</a>
+  <p class="copyright" style="font-size: 18px;">&copy; 2020 <span>DoCars</span> Build With <i class="fas fa-heart text-danger"></i> by : <a href="https://www.instagram.com/ranggaaditya_26/">Rangga Adithia</a>
   </p>
 </section>

@@ -12,7 +12,7 @@
         <a class="nav-item nav-link" href="#destination">Destination</a>
         <a class="nav-item nav-link" href="#gallery">Gallery</a>
         <a class="nav-item nav-link" href="#tour">Tour Package</a>
-        <a class="nav-item btn btn-primary" href="https://gustidriver.setmore.com">Booking</a>
+        <a class="nav-item btn btn-primary" href="{{ config('app.whatsapp') }}">Booking</a>
       </div>
       
     </div>
