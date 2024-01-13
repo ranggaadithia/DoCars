@@ -56,7 +56,7 @@ Route::get('/cars', function () {
     ]);
 });
 Route::get('/activities', [ActivityController::class, 'index']);
-Route::get('/activity/{package:slug}', [ActivityController::class, 'show']);
+Route::get('/activity/{package:slug}', [ActivityController::class, 'show'])->name('activity');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -1,24 +1,24 @@
 @extends('layouts.index')
 
 @section('container')
-@include('components.navbar-dark')
+@include('components.navbar')
 
-<div class="container mx-auto md:px-10 px-4 mt-32">
-  <h1 class="text-center font-subtitle font-semibold text-4xl">Guest Activities</h1>
-  <div class="line-pattern mx-auto mt-2"></div>
-  <div class="flex flex-col md:flex-row gap-y-6 items-center justify-center md:justify-start flex-wrap">
-    @foreach ($activities as $activity)
-      <div class="md:basis-1/2 lg:basis-1/3 md:px-6 w-full">
-        <div class="rounded-xl shadow-lg relative flex flex-col justify-between items-center h-[26rem] overflow-hidden after:content-[''] after:block after:absolute after:inset-0 after:bg-gradient-to-b after:from-black/30 group cursor-pointer">
-          <img src="{{ asset('storage/'.$activity->image_cover) }}" alt="" class="absolute w-full h-full object-cover group-hover:scale-110 transition duration-300 ease-in-out">
-          <h4 class="text-white mt-10 z-20 text-center font-subtitle text-2xl group-hover:mt-12 transition-all duration-300 ease-in-out">{{ $activity->name }}</h4>
-          <a href="/activity/{{ $activity->slug }}" class="button z-20 lg:opacity-0 mb-12 lg:group-hover:opacity-100 transition duration-300 ease-in-out">Read More</a>
+<section id="tour" class="tour pt-5 pb-5">
+  <div class="container">
+    <h1 class="text-center title pt-3" data-aos="fade-up">Tour activity</h1>
+    <div class="row">
+      @foreach ($activities as $activity)
+      <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="box-tour">
+          <p>{{ $activity->name }}</p>
+          <a href="{{ route('activity', $activity->slug) }}" class="btn btn-primary">View Details</a>
+          <img src="{{ asset('storage/'. $activity->image_cover) }}" alt="">
         </div>
       </div>
-    @endforeach
+      @endforeach
     </div>
-</div>
+  </div>
+</section>
 
-<div class="mt-32"></div>
 @include('components.footer')
 @endsection
